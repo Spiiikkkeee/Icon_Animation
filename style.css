@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Merriweather:ital,wght@1,900&family=Oswald:wght@300;500&family=Poppins:ital,wght@0,300;0,400;1,600&family=Signika&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialicon {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.socialicon li {
+    margin: 0 10px;
+}
+
+.socialicon li a {
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+li.insta a:hover {
+    color: #e26685;
+    background-color: #111827;
+    font-size: 40px;
+}
+
+li.youtu a:hover {
+    color: red;
+    font-size: 40px;
+    background-color: #111827;
+}
+
+li.twit a:hover {
+    color: blue;
+    font-size: 40px;
+    background-color: #111827;
+}
+
+li.face a:hover {
+    color: blue;
+    font-size: 40px;
+    background-color: #111827;
+}
+
+.socialicon li a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
